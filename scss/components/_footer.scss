@@ -1,0 +1,104 @@
+.main {
+    &__bottomcontent {
+        background-color: $Dark-Violet;
+        background-image: url(/images/bg-boost-desktop.svg);
+        color: $White;
+        padding: 2rem 5rem;
+        text-align: center;
+    }
+    &__getbtn {
+        background-color: $Cyan;
+        color: $White;
+        border: none;
+        padding: 1rem 2.5rem;
+        border-radius: 1.5rem;
+        font-weight: $fw-vb;
+        cursor: pointer;
+        &:hover {
+            background-color: $Cyan-light;
+        }
+    }
+    &__flogo {
+        margin-top: 1.8rem;
+    }
+    &__footer {
+        background-color: $Very-Dark-Violet;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+    }
+    &__fnavigation {
+        display: flex;
+    }
+    &__features {
+        list-style-type: none;
+        padding: 0.5rem;
+        margin-right: 3rem;
+    }
+    &__resources {
+        list-style-type: none;
+        padding: 0.5rem;
+        margin-right: 3.5rem;
+    }
+    &__company {
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+    &__fitems {
+        line-height: 2rem;
+        color: $Grayish-Violet;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+            color: $Cyan;
+        }
+    }
+    &__fitems--active {
+        color: $White;
+        font-size: 1.1rem;
+    }
+    &__icon {
+        margin-top: 2rem;
+        img {
+            position: relative;
+            padding-right: 1.5rem;
+            cursor: pointer;
+            &:hover {
+                fill: $Cyan;
+        }
+        }
+    }
+    @media only screen and (max-width: 500px) { 
+        &__bottomcontent {
+            text-align: center;
+            background-image: url(/images/bg-boost-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 4rem 5rem;
+            h1 {
+                font-size: 1.7rem;
+                width: 90vw;
+                position: relative;
+                right: 3rem;
+            }
+        }
+        &__footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__fnavigation {
+            display: flex;
+            flex-direction: column;
+        }
+        &__resources {
+            margin-left: 4rem;
+        }
+         &__features {
+            margin-left: 4rem;
+        }
+        &__flogo {
+            margin-left: 4rem;
+        }
+    }
+}

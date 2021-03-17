@@ -1,0 +1,123 @@
+.main {
+    &__details {
+        background-color: #F1F1F6;
+        padding: 9rem 5rem;
+        position: relative;
+         margin-top: -6.5rem;
+         z-index: -999;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         height: 32rem;
+         .links__container {
+        position: relative;
+        width: 86vw;
+        z-index: 999;
+    }
+    .link {
+        color: $Very-Dark-Blue;
+        background-color: $White;
+        padding: 1.3rem 4rem;
+        border-radius: 0.5rem;
+        margin-top: -3.8rem;
+        margin-bottom: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .short__link {
+        color: $Cyan;
+    }
+    .copy__btn {
+       height: 35px;
+        width: 10%;
+        background-color: $Cyan;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    }
+    &__stattxt {
+        text-align: center;
+        h2 {
+            color: $Very-Dark-Blue;
+            font-size: 2rem;
+            line-height: 0.5em;
+        }
+        p{
+            color: $Grayish-Violet;
+            width: 29em;
+            font-size: 0.9rem;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+    &__txtcard {
+        padding: 1rem 1.4rem;
+        background-color: $White;
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px 2px rgb(233, 233, 233);
+        h3 {
+            margin-top: -2rem;
+            color: $Very-Dark-Blue;
+        }
+        p {
+            color: $Grayish-Violet;
+            font-size: 1rem;
+        }
+    }
+    &__txtcard:nth-of-type(2) {
+        position: relative;
+        top: 2rem;
+    }
+    &__txtcard:nth-of-type(3) {
+        position: relative;
+        top: 5rem;
+    }
+    &__imgcircle {
+        background-color: $Dark-Violet;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+        position: relative;
+        top: -3rem;
+        img {
+            margin-left: 1.2rem;
+            margin-top: 1rem;
+
+        }
+    }
+    @media only screen and (max-width: 500px) { 
+        &__details {
+            height: auto;
+        }
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            hr {
+                width: 10rem;
+                border: 5px solid pink;
+            }
+        }
+        &__txtcard {
+            width: 80vw;
+            margin-left: 1rem;
+        }
+        &__stattxt {
+            h2 {
+                font-size: 1.9rem;
+            }
+            p {
+                width: 90vw;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.main {
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    &__txt {
+        h1 {
+            font-size: 3.8rem;
+            color: $Very-Dark-Violet;
+            line-height: 1.2em;
+        }
+        p{
+            color: $Grayish-Violet;
+            font-size: 0.8rem;
+            margin-top: -2rem;
+            line-height: 1.5em;
+            width: 75%;
+        }
+    }
+    &__go {
+        background-color: $Cyan;
+        border-radius: 1.5rem;
+        border:none;
+        padding: 0.8rem 2rem;
+        color: $White;
+        font-weight: $fw-vb;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    &__illustration {
+        margin-left: -5rem;
+        position: relative;
+        left: 13rem;
+    }
+    &__form {
+        background-color: $Very-Dark-Blue;
+        background-image: url(/images/bg-shorten-desktop.svg);
+        padding: 2rem 4rem;
+        border-radius: 0.4rem;
+        text-align: center;
+        z-index: 999;
+        input {
+            width: 61vw;
+            padding: 1rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: $fw-b;
+            &:focus {
+                outline: none;
+            }
+        }
+        .error__msg {
+            color:$Red;
+            text-align: left;
+            margin-top: 0.8rem;
+            visibility: hidden;
+        }
+        .error__msg .show {
+            visibility: visible;
+        }
+    }
+    &__shortbtn {
+        background-color: $Cyan;
+        border-radius: 0.5rem;
+        border:none;
+        padding: 1rem 2rem;
+        color: $White;
+        font-size: 1rem;
+        font-weight: $fw-vb;
+        margin-top: 1rem;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: $Cyan-light;
+        }
+    }
+
+@media only screen and (max-width: 900px) {
+    &__txt {
+        z-index: 999; 
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+    &__illustration {
+        margin-right: 5rem;
+    }
+}
+@media only screen and (max-width: 500px) { 
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    &__txt {
+        text-align: center;
+        h1 {
+            font-size: 2.5rem;
+        }
+        p{
+            position: relative;
+            left: 0.7rem;
+            margin-top: 0.2rem;
+            width: 70vw;
+        }
+    }
+    input {
+        width: 63vw;
+    }
+    &__shortbtn {
+        width: 72vw;
+    }
+    &__form {
+        padding:1.5rem 1rem;
+    }
+}
+}

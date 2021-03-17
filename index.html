@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>URL Shortening</title>
+</head>
+<body>
+    <div class="main">
+        <!-- Header Starts -->
+        <div class="main__container">
+        <div class="main__header">
+            <div class="main__hlogo">
+                <img src="./images/logo.svg">
+            </div>
+            <div class="main__navigation">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <nav class="main__nav">
+                    <div class="main__logo">
+                        <img src="./images/logo.svg">
+                    </div>
+                    <ul class="main__list">
+                        <li class="main__item"><a href="#">Features</a></li>
+                        <li class="main__item"><a href="#">Pricing</a></li>
+                        <li class="main__item"><a href="#">Resources</a></li>
+                    </ul>
+                    <hr>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+                        <path class="line top"
+                            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path class="line bottom"
+                            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                    </svg>
+                </label>
+                <div class="main__button main__nav">
+                    <button class="main__loginbtn">Login</button>
+                    <button class="main__signupbtn"> SignUp</button>
+                </div>
+            </div>
+        </div>
+        <!-- Content Starts -->
+        <div class="main__content">
+            <div class="main__txt">
+                <h1>More than just shortner links</h1>
+                <p>Build your brand's recognition and get
+                    detailed insight on how your links are
+                    performing.
+                </p>
+                <button class="main__go">Get Started</button>
+            </div>
+            <div class="main__illustration">
+                <img src="./images/illustration-working.svg">
+            </div>
+        </div>
+        <!-- URL Shortening form -->
+        <div class="main__form">
+            <input type="txt" id="shortener" placeholder="Shorten a link here..">
+            <button class="main__shortbtn" id="submit__btn">Shortan it!</button>
+            <div class="error__msg">
+                <span id="error">Please add a link</span>
+            </div>
+        </div>
+        </div>
+        <!-- Paragraph Details -->
+        <div class="main__details">
+            <div class="links__container">
+            </div>
+            <div class="main__stattxt">
+                <h2>Advanced Statistics</h2>
+                <p>Track how your links are performing across the
+                web with our advanced statistics dashboard.</p>
+            </div>
+            <div class="main__cards">
+                <!-- card One -->
+                <div class="main__txtcard">
+                    <div class="main__imgcircle">
+                       <img src="./images/icon-brand-recognition.svg">
+                    </div>
+                    <h3>Brand Recognition</h3>
+                    <p>Boost your brand recognition with each click.
+                        Generic links don't mean a thing. Branded links
+                        help instil confidence in your content.
+                    </p>
+                </div>
+                <!-- card Two -->
+                <div class="main__txtcard">
+                    <div class="main__imgcircle">
+                        <img src="./images/icon-detailed-records.svg">
+                    </div>
+                    <h3>Detailed Records</h3>
+                    <p>Gain insights into who is clicking your links. Knowing
+                        when and where people engage with your content helps inform
+                        better decisions.
+                    </p>
+                </div>
+                <!-- card Three -->
+                <div class="main__txtcard">
+                    <div class="main__imgcircle">
+                        <img src="./images/icon-fully-customizable.svg">
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>Improve brand awareness and content discoverability
+                        through Customizable links, supercharging audience engagment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Content -->
+        <div class="main__bottomcontent">
+            <h1>Boost your links today</h1>
+            <button class="main__getbtn">Get Started</button>
+        </div>
+        <!-- Footer -->
+        <div class="main__footer">
+            <div class="main__flogo">
+                <img src="/images/logow.svg">
+            </div>
+            <div class="main__fnavigation">
+                <ul class="main__features">
+                    <li class="main__fitems main__fitems--active">Features</li>
+                    <li class="main__fitems">Link Shortening</li>
+                    <li class="main__fitems">Branded Links</li>
+                    <li class="main__fitems">Analytics</li>
+                </ul>
+                <ul class="main__resources">
+                    <li class="main__fitems main__fitems--active">Resources</li>
+                    <li class="main__fitems">Blog</li>
+                    <li class="main__fitems">Developers</li>
+                    <li class="main__fitems">Support</li>
+                </ul>
+                <ul class="main__company">
+                    <li class="main__fitems main__fitems--active">Company</li>
+                    <li class="main__fitems">About</li>
+                    <li class="main__fitems">Our Team</li>
+                    <li class="main__fitems">Careers</li>
+                    <li class="main__fitems">Contact</li>
+                </ul>
+            </div>
+            <div class="main__icon">
+                <img src="./images/icon-facebook.svg">
+                <img src="./images/icon-twitter.svg">
+                <img src="./images/icon-pinterest.svg">
+                <img src="./images/icon-instagram.svg">
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
